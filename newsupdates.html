@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates | Realty Development</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link your existing stylesheet -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img\logo.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="newsupdates.html">News & Updates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="text-center py-4" style="background-color: var(--forest-green); color: white;">
+        <h1>Latest News & Updates</h1>
+        <p>Stay informed with the latest developments, events, and real estate insights.</p>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+
+            <!-- Sidebar (Filters) -->
+            <aside class="col-md-3 sidebar">
+                <h4>Filter by Category</h4>
+                <select class="form-select" id="newsFilter">
+                    <option value="all">All News</option>
+                    <option value="development">Development Updates</option>
+                    <option value="market">Market Trends</option>
+                    <option value="events">Community Events</option>
+                </select>
+            </aside>
+
+            <!-- News Content -->
+            <section class="col-md-9">
+                <div class="row" id="newsContainer">
+
+                    <!-- News Item 1 -->
+                    <div class="col-md-6 news-item" data-category="development">
+                        <div class="property-container">
+                            <img src="img\lot6.jpg" alt="News 1">
+                            <div class="property-overlay">
+                                <p><strong>New Phase Launched!</strong> Discover the latest land offerings.</p>
+                            </div>
+                        </div>
+                        <h5 class="mt-2">New Phase Launched!</h5>
+                        <p class="text-muted">March 30, 2025</p>
+                        <p>We are excited to announce the launch of a new phase in our development.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+
+                    <!-- News Item 2 -->
+                    <div class="col-md-6 news-item" data-category="events">
+                        <div class="property-container">
+                            <img src="img\lot1.jpg" alt="News 2">
+                            <div class="property-overlay">
+                                <p><strong>Upcoming Open House</strong> Join us for a tour of our available lots.</p>
+                            </div>
+                        </div>
+                        <h5 class="mt-2">Upcoming Open House</h5>
+                        <p class="text-muted">April 5, 2025</p>
+                        <p>Join us for an exclusive open house event and explore available lots firsthand.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+
+                    <!-- News Item 3 -->
+                    <div class="col-md-6 mt-4 news-item" data-category="market">
+                        <div class="property-container">
+                            <img src="img\lot10.jpg" alt="News 3">
+                            <div class="property-overlay">
+                                <p><strong>Price Adjustments</strong> Get the best deals on land investment.</p>
+                            </div>
+                        </div>
+                        <h5 class="mt-2">Price Adjustments</h5>
+                        <p class="text-muted">April 10, 2025</p>
+                        <p>We have adjusted our pricing to provide better investment opportunities.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+
+                    <!-- News Item 4 -->
+                    <div class="col-md-6 mt-4 news-item" data-category="development">
+                        <div class="property-container">
+                            <img src="img\lot16.jpg" alt="News 4">
+                            <div class="property-overlay">
+                                <p><strong>Community Expansion</strong> New amenities and improvements coming soon.</p>
+                            </div>
+                        </div>
+                        <h5 class="mt-2">Community Expansion</h5>
+                        <p class="text-muted">April 15, 2025</p>
+                        <p>We are enhancing the community with new parks and public spaces.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 mt-4" style="background-color: var(--earth-brown); color: white;">
+        <p>&copy; 2025 Realty Development. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Filtering Functionality
+        document.getElementById("newsFilter").addEventListener("change", function () {
+            let selectedCategory = this.value;
+            let newsItems = document.querySelectorAll(".news-item");
+
+            newsItems.forEach(item => {
+                if (selectedCategory === "all" || item.getAttribute("data-category") === selectedCategory) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

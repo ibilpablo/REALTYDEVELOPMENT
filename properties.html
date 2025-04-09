@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Realty Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navigation">
+        <a class="navbar-brand" href="#">
+            <img src="img\logo.png" alt="Logo" class="logo">
+        </a>
+        <div class="container">
+            <!-- Logo sa kaliwa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i> <!-- FontAwesome icon -->
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="properties.html">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="newsupdates.html">News & Updates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+
+                </ul>
+
+            </div>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <h5>Filters</h5>
+                <select>
+                    <option>Prices</option>
+                </select>
+                <select>
+                    <option>Ratings</option>
+                </select>
+                <select>
+                    <option>Latest</option>
+                </select>
+                <select>
+                    <option>Place/Location</option>
+                </select>
+            </div>  
+                    <div class="col-md-9">
+                        <!-- Property Grid (3 rows, 4 columns) -->
+                        <div class="row">
+                            <!-- San Fernando -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SanFernando">
+                                        <p>San Fernando</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot5.jpg" alt="San Fernando Pic" class="img-fluid">
+                                <p>San Fernando</p>
+                            </div>
+                    
+                            <!-- Angeles City -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Angeles">
+                                        <p>Angeles City</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot6.jpg" alt="Angeles City Pic" class="img-fluid">
+                                <p>Angeles City</p>
+                            </div>
+                    
+                            <!-- Paniqui -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Paniqui">
+                                        <p>Paniqui</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot7.jpg" alt="Paniqui Property" class="img-fluid">
+                                <p>Paniqui</p>
+                            </div>
+                    
+                            <!-- Pampanga -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Pampanga">
+                                        <p>Pampanga</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot8.jpg" alt="Pampanga Pic" class="img-fluid">
+                                <p>Pampanga</p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <!-- La Paz -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LaPaz">
+                                        <p>La Paz</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot9.jpg" alt="La Paz Property" class="img-fluid">
+                                <p>La Paz</p>
+                            </div>
+                    
+                            <!-- San Jose -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SanJose">
+                                        <p>San Jose</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot10.jpg" alt="San Jose Property" class="img-fluid">
+                                <p>San Jose</p>
+                            </div>
+                    
+                            <!-- Concepcion -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Concepcion">
+                                        <p>Concepcion</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot11.jpg" alt="Concepcion Property" class="img-fluid">
+                                <p>Concepcion</p>
+                            </div>
+                    
+                            <!-- Tarlac City -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#TarlacCity">
+                                        <p>Tarlac City</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot12.jpg" alt="Tarlac City Property" class="img-fluid">
+                                <p>Tarlac City</p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <!-- Balibago -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Balibago">
+                                        <p>Balibago</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot13.jpg" alt="Balibago Property" class="img-fluid">
+                                <p>Balibago</p>
+                            </div>
+                    
+                            <!-- San Manuel -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SanManuel">
+                                        <p>San Manuel</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot14.jpg" alt="San Manuel Property" class="img-fluid">
+                                <p>San Manuel</p>
+                            </div>
+                    
+                            <!-- porac -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Porac">
+                                        <p>Porac</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot15.jpg" alt="porac Property" class="img-fluid">
+                                <p>porac</p>
+                            </div>
+                    
+                            <!-- Tarlac Property 9 -->
+                            <div class="col-md-3 property-container">
+                                <div class="property-overlay">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Gerona">
+                                        <p>Gerona</p>
+                                    </button>
+                                </div>
+                                <img src="img\lot16.jpg" alt="Gerona Property" class="img-fluid">
+                                <p>Gerona</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Add modals for each property -->
+                        <!-- San Fernando Modal -->
+                        <div class="modal fade" id="SanFernando" tabindex="-1" role="dialog" aria-labelledby="SanFernando" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">San Fernando</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img\lot5.jpg" alt="San Fernando Pic" class="img-fluid">
+                                        <blockquote class="blockquote text-center">
+                                            <p>San Fernando Lot</p>
+                                            <footer class="blockquote-footer">
+                                                Prime property for investment in San Fernando, Pampanga. Located near major roads and commercial areas.
+                                                <br>Total Land Area: 500 sqm
+                                                <br>Ideal for residential or commercial development.
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" onclick="window.location.href='modals/sanfernandoM.html'">Interested?</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Angeles City Modal -->
+                        <div class="modal fade" id="Angeles" tabindex="-1" role="dialog" aria-labelledby="Angeles" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Angeles City</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img\lot6.jpg" alt="Angeles City Pic" class="img-fluid">
+                                        <blockquote class="blockquote text-center">
+                                            <p>Angeles City Lot</p>
+                                            <footer class="blockquote-footer">
+                                                Prime property for investment in Angeles City. Near Clark Freeport Zone and major establishments.
+                                                <br>Total Land Area: 600 sqm
+                                                <br>Perfect for commercial or residential use.
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" onclick="window.location.href='modals/angelescityM.html'">Interested?</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                <!-- Add modals for each Tarlac Property 1 - 9 -->
+                <!-- San Fernando Modal -->
+                <div class="modal fade" id="SanFernando" tabindex="-1" role="dialog" aria-labelledby="SanFernando"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">San Fernando</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img\lot5.jpg" alt="San Fernando Pic"
+                                    class="img-fluid">
+                                <blockquote class="blockquote text-center">
+                                    <p>San Fernando Lot</p>
+                                    <footer class="blockquote-footer">
+                                        Prime property for investment in San Fernando, Pampanga. Located near major
+                                        roads and commercial areas.
+                                        <br>Total Land Area: 500 sqm
+                                        <br>Ideal for residential or commercial development.
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"
+                                    onclick="window.location.href='modals/sanfernandoM.html'">Interested?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Angeles City Modal -->
+                <div class="modal fade" id="Angeles" tabindex="-1" role="dialog" aria-labelledby="Angeles"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Angeles City</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img\lot6.jpg" alt="Angeles City Pic"
+                                    class="img-fluid">
+                                <blockquote class="blockquote text-center">
+                                    <p>Angeles City Lot</p>
+                                    <footer class="blockquote-footer">
+                                        Prime property for investment in Angeles City. Near Clark Freeport Zone and
+                                        major establishments.
+                                        <br>Total Land Area: 600 sqm
+                                        <br>Perfect for commercial or residential use.
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"
+                                    onclick="window.location.href='modals/angelescityM.html'">Interested?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!-- Paniqui Property 1 Modal -->
+<div class="modal fade" id="Paniqui" tabindex="-1" role="dialog" aria-labelledby="Paniqui" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Paniqui Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot7.jpg" alt="Paniqui Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>Paniqui Property</p>
+                    <footer class="blockquote-footer">
+                        A vast agricultural land in Paniqui, perfect for farming or other agro-industrial projects.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/paniquiM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- pampanga -->
+<div class="modal fade" id="Pampanga" tabindex="-1" role="dialog" aria-labelledby="PamPanga" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pampanga Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot8.jpg" alt="pampanga Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>Pampanga Property</p>
+                    <footer class="blockquote-footer">
+                        A strategic property in Pampanga, ideal for residential or commercial establishments.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/pampangaM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- La Paz Property 2 Modal -->
+<div class="modal fade" id="LaPaz" tabindex="-1" role="dialog" aria-labelledby="LaPaz" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">La Paz Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot8.jpg" alt="La Paz Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>La Paz Property</p>
+                    <footer class="blockquote-footer">
+                        A strategic property in La Paz, Tarlac, ideal for residential or commercial establishments.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/lapazM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- San Jose Property 3 Modal -->
+<div class="modal fade" id="SanJose" tabindex="-1" role="dialog" aria-labelledby="SanJose" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">San Jose Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot10.jpg" alt="San Jose Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>San Jose Property</p>
+                    <footer class="blockquote-footer">
+                        A residential lot in San Jose, near key schools and business establishments. Ideal for family homes.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/sanjoseM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Concepcion Property 4 Modal -->
+<div class="modal fade" id="Concepcion" tabindex="-1" role="dialog" aria-labelledby="Concepcion" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Concepcion Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot11.jpg" alt="Concepcion Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>Concepcion Property</p>
+                    <footer class="blockquote-footer">
+                        A prime lot with potential for both residential and light industrial development, located in Concepcion.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/concepcionM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Victoria Property 5 Modal -->
+<div class="modal fade" id="Victoria" tabindex="-1" role="dialog" aria-labelledby="Victoria" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Victoria Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot12.jpg" alt="Victoria Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>Victoria Property</p>
+                    <footer class="blockquote-footer">
+                        A scenic property in Victoria, perfect for agricultural use or eco-tourism development.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/victoriaM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tarlac City Property 6 Modal -->
+<div class="modal fade" id="TarlacCity" tabindex="-1" role="dialog" aria-labelledby="TarlacCity" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tarlac City Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot13.jpg" alt="Tarlac City Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>Tarlac City Property</p>
+                    <footer class="blockquote-footer">
+                        A prime residential property in the heart of Tarlac City, suitable for high-end residential projects.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/tarlaccityM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Balibago Property 7 Modal -->
+<div class="modal fade" id="Balibago" tabindex="-1" role="dialog" aria-labelledby="Balibago" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Balibago Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot14.jpg" alt="Balibago Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>Balibago Property</p>
+                    <footer class="blockquote-footer">
+                        A prime commercial and residential lot located in the lively Balibago area of Tarlac.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/balibagoM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- San Manuel Property 8 Modal -->
+<div class="modal fade" id="SanManuel" tabindex="-1" role="dialog" aria-labelledby="SanManuel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">San Manuel Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot15.jpg" alt="San Manuel Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>San Manuel Property</p>
+                    <footer class="blockquote-footer">
+                        A tranquil property in San Manuel, perfect for residential and agricultural development.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/sanmanuelM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Gerona Property 9 Modal -->
+<div class="modal fade" id="Gerona" tabindex="-1" role="dialog" aria-labelledby="Gerona" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Gerona Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot16.jpg" alt="Gerona Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>Gerona Property</p>
+                    <footer class="blockquote-footer">
+                        A valuable property in Gerona, Tarlac, ideal for mixed-use commercial development or agricultural ventures.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/geronaM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Porac  -->
+<div class="modal fade" id="Porac" tabindex="-1" role="dialog" aria-labelledby="Porac" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Porac Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img\lot15.jpg" alt="Porac Property" class="img-fluid">
+                <blockquote class="blockquote text-center">
+                    <p>Porac Property</p>
+                    <footer class="blockquote-footer">
+                        A valuable property in Porac, Pampanga, ideal for mixed-use commercial development or agricultural ventures.
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='modals/poracM.html'">Interested?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <!-- Continue for Tarlac Property 7, 8, and 9 as per the same pattern... -->
+
+
+                <!-- Repeat modal structure for Tarlac 2 - Tarlac 9... -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f8fa;
+}
+
+.profile-header {
+    background-color: #1da1f2;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 40px 20px;
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.profile-header h2 {
+    font-size: 2rem;
+}
+
+.profile-header .username {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.profile-header .bio {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+}
+
+.profile-header .stats div {
+    margin-right: 40px;
+}
+
+.tweets-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tweet {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tweet img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tweet p {
+    font-size: 1.1rem;
+}
+
+.tweet-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.tweet-footer button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+.tweet-footer button:hover {
+    background-color: #1991d8;
+}
+
+.followers-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.followers-section h5 {
+    font-size: 1.4rem;
+}
+
+.followers-section .followers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.followers-section .followers .card {
+    width: 30%;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

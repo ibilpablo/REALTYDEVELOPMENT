@@ -1,0 +1,181 @@
+/* Lost Forest Color Palette */
+:root {
+    --forest-green: #2D6A4F;  /* Deep green */
+    --moss-green: #6A994E;    /* Mossy green */
+    --earth-brown: #3E4C3C;    /* Earthy brown */
+    --mist-gray: #A7B3A8;     /* Misty gray */
+    --wood-bark: #6F4F37;     /* Wood bark brown */
+    --leaf-green: #A3C586;    /* Lush green */
+    --deep-blue: #4C6A92;     /* Deep forest blue */
+}
+
+/* General Body Style */
+body {
+    background-color: var(--mist-gray); /* Soft misty gray background */
+    color: var(--forest-green);  /* Default text color */
+}
+
+/* Logo */
+.logo {
+    height: 60px;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 200px;
+}
+
+.navigation{
+    background-color: var(--earth-brown); /* Dark earthy background */
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--earth-brown); /* Dark earthy background */
+    color: rgb(255, 255, 255); /* White text color */
+    padding: 20px;
+}
+
+.sidebar select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: var(--moss-green);  /* Light green background for select */
+    color: rgb(255, 255, 255);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--earth-brown);  /* Dark, earthy navbar background */
+}
+ 
+
+.navbar .nav-link {
+    color: var(--leaf-green);  /* Lighter green for navbar links */
+}
+
+.navbar .nav-link:hover {
+    color: var(--moss-green);  /* Darker green on hover */
+}
+
+/* Sliding Picture (Carousel) */
+.carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(0.7); /* Darken the images slightly for a mysterious feel */
+}
+
+/* Content Styles */
+.content {
+    text-align: center;
+}
+
+.content img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Property Container */
+.property-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: var(--mist-gray); /* Misty gray background for property containers */
+    border: 2px solid var(--wood-bark); /* Earthy border for property containers */
+}
+
+/* Property Overlay */
+.property-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for image */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.property-container:hover .property-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.property-overlay p {
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--wood-bark);  /* Wood bark color for buttons */
+    border-color: var(--wood-bark);      /* Matching border color */
+}
+
+.btn-primary:hover {
+    background-color: var(--deep-blue);  /* Deep blue hover effect */
+    border-color: var(--deep-blue);
+}
+
+/* Bootstrap Property Adjustments */
+.property-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Bootstrap Carousel Adjustments */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: var(--wood-bark); /* Wood bark color for carousel controls */
+}
+
+/* Other content styles */
+.content {
+    text-align: center;
+}
+
+.content img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+
+/* 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0px;
+}
+    
+.div4 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+        
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.div20 {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 2;
+}
+         */
+
+

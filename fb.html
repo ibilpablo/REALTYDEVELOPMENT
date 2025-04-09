@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVGM Realty Development - Facebook Page View</title>
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #3b5998;
+        }
+        .navbar a {
+            color: white !important;
+        }
+        .cover-photo {
+            width: 100%;
+            height: 250px;
+            background-image: url('D:/VisualStudio Proj/JVGMRD/img/slide3.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .profile-card {
+            margin-top: -60px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.1);
+        }
+        .profile-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid white;
+            margin-top: -75px;
+        }
+        .post-card {
+            background-color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,.1);
+        }
+        .post-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .about-section {
+            background-color: #f6f7f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .about-section h5 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">JVGM Realty Development</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <!-- Cover Photo -->
+    <div class="cover-photo"></div>
+
+    <!-- Profile Card -->
+    <div class="container mt-4">
+        <div class="profile-card">
+            <img src="img\prof.png" alt="JVGM Realty Logo">
+            <h5>JVGM Realty Development</h5>
+            <p>Real Estate Development | Creating Dream Homes</p>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section">
+            <h5>About</h5>
+            <p>JVGM Realty Development specializes in high-quality real estate projects, offering modern homes in prime locations.</p>
+        </div>
+
+        <!-- Posts Section -->
+        <div class="row">
+            <!-- Post 1 -->
+            <div class="col-md-12">
+                <div class="post-card">
+                    <h6>New Residential Complex in Downtown</h6>
+                    <p>We're excited to announce our latest residential project located in the heart of the city! Check out the plans and schedule your tour today.</p>
+                    <img src="img\lot12.jpg" alt="Residential Project">
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="col-md-12">
+                <div class="post-card">
+                    <h6>Affordable Housing Options Available</h6>
+                    <p>Looking for a new home? We offer affordable options for families. Contact us for more details!</p>
+                    <img src="img\lot9.jpg" alt="Affordable Housing">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4 JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
